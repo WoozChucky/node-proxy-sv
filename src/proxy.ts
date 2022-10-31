@@ -7,7 +7,7 @@ export function proxy(
   destinationHost: ServiceHost,
   destinationPort: ServicePort,
   destinationTLS: ServiceTLS,
-  options: ProxySetupOptions
+  options: Partial<ProxySetupOptions>
 ): TcpProxy {
   return new TcpProxy(
     selfPort,
